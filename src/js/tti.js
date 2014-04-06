@@ -18,6 +18,8 @@
  *
  * This TTI implementation is inspired by, but not based on or affiliated
  * with, the Firefox extension Text-to-Image by Starks, RockMFR, and Toad King.
+ *
+ * Webm support added by kirbymuncher and Starks.
  */
 
 var tti =
@@ -56,7 +58,7 @@ var tti =
         return NodeFilter.FILTER_REJECT;
     }, false);
 
-    var pattern = /(?:https?|ftp):\/\/[a-z0-9\.\/%~_-]+\.(?:jpe?g|png|gif|bmp|dib|jpe|jfif)(?![a-z0-9\.\/_-])/i;
+    var pattern = /(?:https?|ftp):\/\/[a-z0-9\.\/%~_-]+\.(?:jpe?g|png|gif|bmp|dib|jpe|jfif|webm)(?![a-z0-9\.\/_-])/i;
     while (node = iterator.nextNode())
     {
       if (tti.converted == prefs['elements.tti.max'] || node.data.length == 3) // Signature separator
@@ -68,11 +70,22 @@ var tti =
         var index = node.data.indexOf(match[0]);
         node.deleteData(index, match[0].length);
 
-        var img = document.createElement('img');
-        img.src = match[0];
-        img.alt = match[0];
-        img.title = match[0];
-        img.className = 'gamefox-tti';
+        if (match[0].indexOf("webm") >=0) {
+          var img = document.createElement('video'); 
+          img.src = match[0];
+          img.loop = true;
+          img.volume = 0;
+          img.controls = true;
+          img.autoplay = true;
+        } 
+
+        else {
+          var img = document.createElement('img');
+          img.src = match[0];
+          img.alt = match[0];
+          img.title = match[0];
+          img.className = 'gamefox-tti';
+        }
 
         tti.resize(img, prefs['elements.tti.x'], prefs['elements.tti.y']);
 
