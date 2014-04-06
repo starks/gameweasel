@@ -1,0 +1,63 @@
+<!-- vim: set et sw=2 ts=2 sts=2: -->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="classic.css" />
+    <script type="text/javascript" src="menu.js"></script>
+  </head>
+  <body>
+    <div id="userlinks">
+      <div class="strip">
+        <a href="http://www.gamefaqs.com/boards/user.php">Profile</a> /
+        <a href="http://www.gamefaqs.com/user/manage.html">Manage</a>
+      </div>
+
+      <div class="strip">
+        <a href="http://www.gamefaqs.com/boards/myposts.php">Posts</a> /
+        <a href="http://www.gamefaqs.com/boards/tracked.php">Tracked</a> /
+        <a href="http://www.gamefaqs.com/boards/modhist.php">Mods</a>
+      </div>
+    </div>
+
+    <div id="accounts">
+      <div class="strip"><span id="accounts-head">Accounts <span>v</span></a></div><table id="accounts-list"></table>
+    </div>
+
+    <div id="login">
+      <div class="strip">Login (Name/Pass)</div>
+        <input type="text" id="login_email" maxlength="90"/>
+        <input type="password" id="login_passwd" maxlength="20"/>
+        <button id="gamefaqs-login-submit">Login</button>
+    </div>
+    <div id="logout" class="strip">
+        <a href="#" id="logout_button">Logout</a> /
+        <a href="http://membership.gamefaqs.com/1328-4-46.html">Password</a>
+    </div>
+
+    <div id="search">
+      <div class="strip">
+        <a href="http://www.gamefaqs.com/search/">Search GameFAQs</a>
+      </div>
+      <form>
+        <input type="text" name="game" id="search_game" size="12"/>
+        <button id="search-button">Go</button>
+      </form>
+    </div>
+
+    <div id="gotoboard">
+      <div class="strip"><a href="http://www.gamefaqs.com/boards/">Go to board</a></div>
+      <form>
+        <label for="lookup_board">ID: </label><input type="text" name="board" id="lookup_board" size="10"/>
+        <button id="goto-button">Go</button>
+      </form>
+    </div>
+
+    <div id="favorites">
+      <div class="strip"><span id="favorites-head">Favorites <span>v</span></a></div><table id="favorites-list"></table>
+    </div>
+
+    <div id="options">
+      <div class="strip"><a href="../options/options.html">Options</a> / <a href="../about.html">About</a><span id="tti"></span></div>
+    </div>
+  </body>
+</html>

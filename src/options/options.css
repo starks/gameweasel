@@ -1,0 +1,244 @@
+/* vim: set et sw=2 ts=2 sts=2 tw=79:
+ *
+ * Copyright 2011 Jesse Lentz
+ *
+ * This file is part of GameWeasel.
+ *
+ * GameWeasel is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2
+ * as published by the Free Software Foundation.
+ *
+ * GameWeasel is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with GameWeasel.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+h1 {
+  position: absolute;
+  left: 170px;
+  top: 0px;
+  margin-top: 13px;
+  width: 700px;
+  text-align: center;
+}
+
+body > img {
+  margin-left: 40px;
+}
+
+body > ul {
+  position: absolute;
+  left: 0px;
+  top: 48px;
+  margin-top: 15px;
+  width: 142px;
+  background-color: gray;
+}
+
+body > div {
+  position: absolute;
+  top: 63px;
+  left: 170px;
+  min-height: 473px;
+  min-width: 700px;
+}
+
+.panel, h1, body > ul {
+  border: 1px solid black;
+  border-radius:5px;
+}
+
+.selected {
+  background-color: red;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.panel .panel {
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+body > ul li {
+  padding: 5px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+ul.loner {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.loner {
+  margin-left: 20px;
+}
+
+div.loner:first-child {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.submenu {
+  padding-left: 25px;
+}
+
+input[type="checkbox"]:not(:checked) ~ .submenu {
+  display: none;
+}
+
+td:first-child {
+  text-align: right;
+}
+
+li > div {
+  padding-left: 25px;
+}
+
+.small {
+  margin-top: 0px;
+  padding-left: 15px;
+  font-size: small;
+}
+
+.notice {
+  display: block;
+  margin-top: 3px;
+  margin-left: 30px;
+  font-size: small;
+}
+
+.warn {
+  font-weight: bold;
+}
+
+.css_desc {
+  font-style: italic;
+}
+
+textarea {
+  width: 550px;
+  height: 70px;
+}
+
+td textarea {
+  height: 40px !important;
+}
+
+input[id="elements.quickpost.link.title"] {
+  width: 80px;
+}
+
+input[type="text"][id*="paging"], input[id="bid"] {
+  width: 60px;
+  margin-right: 15px;
+}
+
+input[type="text"][id*="tti"], input[id="elements.marktc.marker"], input[id="tracked.updateInterval"] {
+  width: 45px;
+}
+
+.color {
+  width: 68px;
+}
+
+.hue {
+  border: 1px solid gray;
+  background: -webkit-gradient(linear, left bottom, right bottom,
+    from(#f00),
+    color-stop(.33, #0f0),
+    color-stop(.66, #00f),
+    to(#f00)
+  );
+}
+
+.lightness {
+  background: -webkit-gradient(linear, left bottom, left top,
+    from(rgba(0, 0, 0, 1)),
+    color-stop(.5, rgba(0, 0, 0, 0)),
+    color-stop(.5, rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 1))
+  );
+}
+
+.hue, .lightness {
+  width: 360px;
+  height: 100px;
+}
+
+.hue, .saturation {
+  position: absolute;
+}
+
+/* Highlighting groups */
+div > .hue {
+  left: 135px;
+  bottom: 23px;
+}
+div > .saturation {
+  left: 210px;
+  bottom: 128px;
+}
+
+/* PM link highlighting */
+li > .hue {
+  left: 100px;
+  top: 180px;
+}
+li > .saturation {
+  left: 175px;
+  top: 153px;
+}
+
+.colorPtr {
+  position: absolute;
+  cursor: default;
+  font-size: 14px;
+  font-family: arial;
+}
+
+label[for*="include"] {
+  margin-right: 15px;
+}
+
+.menu:first-child {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 420px;
+  height: 90%;
+}
+
+.menu:last-child {
+  position: absolute;
+  left: 440px;
+  top: 5px;
+  width: 235px;
+  height: 90%;
+}
+
+ul.panel > li:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+ul.submenu > li > div {
+  padding-left: 0px;
+  margin-left: 0px;
+}

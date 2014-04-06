@@ -1,0 +1,11 @@
+#!/bin/sh
+
+old_version=`cat version`
+read -e -i "$old_version" -p 'New version number: ' new_version
+
+# Update the version number in manifest.json and background.js;
+# In background.js, this only updates the occurrence in defaultPrefs()
+sed -i "1,/${old_version}/s/${old_version}/${new_version}/" src/{manifest.json,background.js}
+zip -r releases/GameWeasel-${new_version}.zip src/
+
+echo "$new_version" > version

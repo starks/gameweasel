@@ -1,0 +1,63 @@
+@charset "utf-8";
+/*
+ * GFCode (GameFOX Implementation)
+ * © 2004-2008, Special Ops
+ */
+
+/* Common formatting for block elements */
+.message i > p, .message em > p {
+    border: 1px #bbb solid !important;
+
+    margin: 0 auto !important;
+    padding: 3px !important;
+    width: 96% !important;
+    border-radius: 4px;
+
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAA\
+    ABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A%2FwD%2FoL2nkwAAAAlwSFl\
+    zAAALEwAACxMBAJqcGAAAAAd0SU1FB9gKBRc5HTs8iOcAAAAZdEVYdENvbW1lbnQAQ3Jl\
+    YXRlZCB3aXRoIEdJTVBXgQ4XAAAADUlEQVQI12NgYGAQBAAAFgASs9Tk8AAAAABJRU5Er\
+    kJggg%3D%3D") !important;
+}
+
+.message blockquote, .message cite, .message i > p {
+	background: rgba(180, 180, 180, 0.1);
+	border: 1px rgba(136, 136, 136, 0.5) solid !important;
+	margin: 0 auto !important;
+	padding: 3px !important;
+	width: 96% !important;
+}
+.message blockquote, .message i > p {
+	border-radius: 4px;
+}
+
+/* Quote headers */
+.message cite {
+	background: rgba(85, 85, 85, 0.1);
+	display: block;
+	font-style: italic !important;
+	font-weight: bold !important;
+	border-radius: 4px 4px 0 0;
+}
+.message cite + br {
+	display: none;
+}
+.message cite + br + blockquote, .message cite + blockquote {
+	border-top: 0 !important;
+	border-radius: 0 0 4px 4px;
+}
+.gamefox-signature cite {
+	background: transparent !important;
+	border: 0 !important;
+	display: inline !important;
+	padding: 0 !important;
+}
+
+code {
+    white-space: pre-wrap;
+}
+
+/* Prevent users from seeing disruptive levels of nesting */
+.message p p p p {
+    display: none !important;
+}

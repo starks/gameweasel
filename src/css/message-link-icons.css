@@ -1,0 +1,29 @@
+.message [id^="p"] a:not(.name):not([name]):not(.gamefox-message-detail-number) {
+	border:1px transparent solid !important;
+	display:-webkit-inline-box !important;
+	display:inline-block !important;
+	font-size:0 !important;
+	height:16px !important;
+	overflow:hidden !important;
+	vertical-align:bottom !important;
+	width:16px !important;
+	background-position:center !important;
+	background-repeat:no-repeat !important;
+}
+.gamefox-message-detail-number:after {content: ' | ';}
+.gamefox-message-links {font-size:0;}
+.gamefox-message-links > br {display:none;}
+
+.message [id^="p"] a[title="Detail"]:not(.gamefox-message-detail-number) {background-image:url(../img/info-post.png) !important;}
+a.gamefox-filter-link {background-image:url(../img/filter-post.png) !important;}
+a.gamefox-quote-link {background-image:url(../img/quote-post.png) !important;}
+a.gamefox-edit-link {background-image:url(../img/edit-post.png) !important;}
+a.gamefox-delete-link {background-image:url(../img/delete-post.png) !important;}
+a.gamefox-show-post-link {background-image:url(../img/show-post.png) !important;}
+a.gamefox-hide-post-link {background-image:url(../img/hide-post.png) !important;}
+
+.message [id^="p"] a:not(.name):not(.gamefox-message-detail-number):hover {
+	background-color:rgba(0,0,0,.5) !important;
+	border-color:currentColor !important;
+	border-radius:3px !important;
+}

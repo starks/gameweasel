@@ -1,0 +1,113 @@
+/* vim: set et sw=2 ts=2 sts=2 tw=79: */
+
+html
+{
+  width: 220px;
+  overflow-x: hidden;
+  margin-right: 15px;
+}
+
+body
+{
+  font: .8em 'Arial', sans-serif;
+  text-align: center;
+  background: #eee;
+  margin: 0;
+}
+
+a
+{
+  color: #03c;
+  font-weight: bold;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+h1
+{
+  background: #6564ff;
+  padding: 2px;
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid #4140db;
+}
+
+h1 a
+{
+  color: #fff;
+}
+
+.strip
+{
+  clear: both;
+  font-weight: bold;
+  margin: 5px 0;
+  background: #6564ff;
+  color: #fff;
+  padding: 2px;
+  border: 1px solid #4140db;
+  border-width: 1px 0;
+}
+
+.strip a
+{
+  color: #fff;
+}
+
+#links
+{
+  max-width: 200px;
+  margin: auto;
+}
+
+#quicknav, #platformlist
+{
+  text-align: left;
+}
+
+#quicknav
+{
+  float: left;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+#platformlist
+{
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+input[name="game"]
+{
+  width: 70%;
+}
+
+input[name="board"]
+{
+  width: 40%;
+}
+
+#accounts-menu
+{
+  text-align: left;
+  margin-left: 5px;
+}
+
+#favorites-menu
+{
+  max-width: 200px;
+}
+
+#accounts-add-link, #accounts-rm-link, #accounts-menu a
+{
+  cursor: pointer;
+}
+
+#favorites-list, #tracked-list, #accounts-list
+{
+  font-size: small;
+}

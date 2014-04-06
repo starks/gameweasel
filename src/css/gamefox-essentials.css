@@ -1,0 +1,61 @@
+/* This file contains unobtrusive styles that work with some of GameFOX's features */
+
+tr.gamefox-pagelist > td
+{
+    background-color: #fff !important;
+    border-top: 1px solid #00004f !important;
+    border-bottom: 1px solid #00004f !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+
+.gamefox-highlight td
+{
+    background-color: transparent !important;
+}
+
+.topics .gamefox-groupname
+{
+    font-style: italic;
+}
+
+.gamefox-quickpost-edit
+{
+	color: gray;
+	font-style: italic;
+}
+
+#gamefox-board-nav
+{
+    clear: both;
+    text-align: right;
+    padding-right: 2px !important;
+}
+
+#gamefox-nightly-msg
+{
+    font-weight: bold;
+}
+
+#gamefox-tracked-note
+{
+    margin: 10px !important;
+    padding: 3px !important;
+    border: 1px #aaa solid;
+    background: #eee;
+}
+
+#gamefox-tracked-note-dismiss
+{
+    color: #000 !important;
+    font-size: 1.5em;
+    padding: 0 5px;
+    margin: -3px -3px -3px 3px;
+    float: right;
+}
+
+#gamefox-favorites-menu
+{
+    margin-right: 5px;
+    float: left;
+}

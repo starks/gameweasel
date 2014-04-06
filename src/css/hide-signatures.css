@@ -1,0 +1,4 @@
+.gamefox-signature { display: block; font-size: 0; }
+.gamefox-signature:before { content: '[hover to show signature]'; font-size: 11px; color: #888; }
+.gamefox-signature:hover { font-size: inherit; }
+.gamefox-signature:hover:before { content: ''; }

@@ -1,0 +1,26 @@
+.gamefox-quickwhois
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 3px !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: #000;
+    background-color: #eee;
+    max-width: 80%;
+    border-radius: 10px;
+    border: #aaa 1px solid;
+    text-align: left;
+}
+
+.author .gamefox-quickwhois /* for left of message data */
+{
+    font-size: 1.1em !important;
+}
+
+.gamefox-quickwhois form
+{
+    display: inline;
+}

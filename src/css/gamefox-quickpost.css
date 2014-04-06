@@ -1,0 +1,38 @@
+#gamefox-quickpost-normal
+{
+    clear: both;
+}
+
+#gamefox-quickpost-afloat
+{
+    position: fixed;
+    z-index: 3;
+    width: 90%;
+    max-width: 750px;
+    border: #aaa 1px solid;
+    background: #eee;
+    padding: 5px !important;
+    border-radius: 10px;
+}
+
+#gamefox-topic
+{
+    width: 70%;
+}
+
+#gamefox-post-signature
+{
+	display: block;
+	padding: 3px;
+}
+
+#gamefox-message, #gamefox-quickpost-signature textarea
+{
+    width: 95%;
+    max-width: 730px;
+}
+
+#gamefox-message-count, #gamefox-title-count
+{
+    margin-left: 1em;
+}

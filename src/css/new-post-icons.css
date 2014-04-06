@@ -1,0 +1,26 @@
+#content .board_wrap col.status,
+#content .board_wrap table.topics tr th:first-child,
+#content .board_wrap table.topics tr:not(.gamefox-pagelist) td:first-child
+{
+  display: none;
+}
+
+.gamefox-new-posts:not(.topic-end), .gamefox-no-new-posts:not(.topic-end) {
+	vertical-align: middle;
+	display: -webkit-inline-box;
+	width: 18px;
+	height: 19px;
+	font-size: 0;
+}
+
+.gamefox-new-posts.topic-start, .gamefox-no-new-posts.topic-start {
+	margin-right: 3px;
+}
+
+.gamefox-new-posts:not(.topic-end) {
+	background-image: url(../img/new-posts.png);
+}
+
+.gamefox-no-new-posts:not(.topic-end) {
+	background-image: url(../img/no-new-posts.png);
+}

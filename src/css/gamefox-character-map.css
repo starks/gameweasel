@@ -1,0 +1,22 @@
+#gamefox-character-map
+{
+    position: absolute;
+    overflow: auto;
+    height: 200px;
+    width: 400px;
+    border: #aaa 1px solid;
+    background: #eee;
+}
+#gamefox-character-map td
+{
+    background: transparent !important;
+    padding: 0 !important;
+    border: #aaa 1px solid;
+}
+#gamefox-character-map a
+{
+    display: block;
+    padding: 10px 5px;
+    background: #fff;
+    text-align: center;
+}

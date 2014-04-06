@@ -1,0 +1,27 @@
+/* vim: set et sw=2 ts=2 sts=2 tw=79: */
+
+body
+{
+  background-color: #66F !important;
+  color: #fff;
+}
+
+a
+{
+  color: #fff !important;
+}
+a:hover
+{
+  color: #ff0 !important;
+}
+
+h1, .strip
+{
+  border: 0 !important;
+}
+
+.strip
+{
+  background: #8080ff !important;
+  font-size: 1.1em !important;
+}

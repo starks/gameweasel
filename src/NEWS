@@ -1,0 +1,203 @@
+0.7.6.3
+--- Quickpost updated for V13
+--- Highlighting updated for V13
+--- TTI updated for V13
+
+0.7.6.1
+--- Workaround for chrome security blocking scripts from pages inside the extension from working
+--- Fixed spoilers disappearing when a post was quoted
+
+0.7.6
+--- Proper redirection to the last post in the topic
+--- Spoiler tags as a button above the quick post box added
+--- All woes with editing and quickpost and poll topics should be fixed
+--- Post without Preview button added, as long as your userlevel is big enough it will work
+--- Fixed not being able to put users in highlight list via right clicking their post
+--- CSS to remove the More from xxx links
+--- CSS to remove popular board topics from the main page
+--- Fixed ad-blocking CSS
+--- Fixed Quickwhois
+--- Added option to remove the native HTML buttons GameFAQs offers on the posting screen.
+
+0.7.5.22
+--- Fix favorites insertion code
+
+0.7.5.21
+--- Fix favorites in some site layouts
+--- Update ad-blocking script
+--- Remove special case for br tag
+--- Add support for new tags in quickpost
+--- Modernize code and quote buttons
+--- Remove "blank line before signature separator" option
+--- Fix polls
+--- Update status icons (normal) stylesheet to display poll icons
+--- Use CSS rather than JavaScript as the toggle mechanism on the options page
+
+0.7.5.16
+--- Fix for non-breaking space in date format
+
+0.7.5.15
+--- Update quote tags
+
+0.7.5.14
+--- Fix account switcher
+
+0.7.5.13
+--- Login key regex updated
+
+0.7.5.12
+--- Preference exporting fixed
+--- Account switcher fixed
+
+0.7.5.11
+--- Name change!
+
+0.7.5.10
+--- Thumbnail conversion limit implemented
+--- Stop using reserved word "class"
+
+0.7.5.9
+--- Fix message headers on archive page
+--- Partial highlighting support on AML
+--- Kill "favorite boards" sidebar in Ricapar Classic
+
+0.7.5.8
+--- Favorite board synchronization fixed
+--- Various stylesheet issues fixed
+--- Functionality restored on AML and tracked topic page
+--- QuickPost positioning fixed
+
+0.7.5.7
+--- Quick fix for site update
+
+0.7.5.5
+--- "even" class preserved in PM inbox rows
+--- RetroClassic and Ninestalgia replaced with "* Extras", loaded automatically
+--- Workaround for topic highlighting in RetroClassic and SpotFAQs
+
+0.7.5.4
+--- Friend and PM functions added to QuickWhois
+--- No "Whoops" error when posting the last message of a topic page
+
+0.7.5.3
+--- GFCode emulation for native quotes
+--- Highlight PM inbox link if there are unread PMs
+--- Apply classes "gamefox-new-pm" and "gamefox-old-pm" to rows in PM inbox
+
+0.7.5.2
+--- Kill native quote link
+
+0.7.5.1
+--- Initialize favorites list as array, not object
+
+0.7.5
+- Changes
+--- Store favorites list in array to retain order; allow re-ordering in favorites manager
+--- Keep posting key up to date; provide specific error message when quickposting with bad key
+--- Omit elements with class "gamefox-no-quote" from quoted messages
+- Bug fixes
+--- Fix delete link for topics with no replies
+--- Fix message detail page for mods
+--- Middle click of favorite/tracked links fixed in toolbar menu
+
+0.7.4.3
+- Changes
+--- Access keys for standard buttons on post.php
+--- Tab focuses post/preview buttons on post.php rather than signature box
+--- Bring back "choose new signature when resetting post" option
+--- Override standard reset button on post.php
+--- Prevent page from being processed multiple times
+- Bug fixes
+--- No error on post.php when "preview and spellcheck" and "post without preview" are both disabled
+
+0.7.4.2
+--- Updated GFPastel
+--- Fixed disabling of GameFAQs stylesheets
+
+0.7.4.1
+- Changes
+--- Updated Ninestalgia
+--- Don't wait for DOMContentLoaded to apply/remove stylesheets
+--- Apply "gamechrome-css" class to inserted stylesheets
+- Bug fixes
+--- Fixed quickposting when board name is omitted from URL
+--- "Add to userlist" fixed with message poster display on left of message
+
+0.7.4
+- Changes
+--- Added favorites manager
+--- Updated ProgFAQs
+--- Logo added to options and about pages
+--- If built-in quickposting is enabled, GameChrome's system takes precedence
+--- If built-in message numbering is enabled, the built-in system takes precedence
+- Bug fixes
+--- Don't reset signature when previewing message
+--- Reload signature panel in preferences after importing GameFAQs sig
+--- When obtaining a posting key, don't send XMLHttpRequest if key is available on current page
+
+0.7.3.1
+- Bug fixes
+--- QuickPosting fixed with message confirmation screen off
+--- Quoting/filtering/quickwhois fixed with poster display on left of message
+--- User level detection fixed with ad in header
+
+0.7.3
+- Changes
+--- Compatible with GameFAQs site update
+--- ProgFAQs stylesheet added
+--- New logo
+--- Added "Blank line before signature separator" option
+--- Hide signature configuration when "Replace standard GameFAQs signature" is disabled
+--- Context menu behavior changed
+- Bug fixes
+--- Fixed gamefox_utils.tcParam()
+--- Decode special characters when editing post
+--- Disable edit link if user level < 30
+--- Show QuickPost box for mods in closed topics
+
+0.7.2
+- Changes
+--- Added "Edit" link to message header
+--- Warning when attempting to set low update interval for tracked topic feed
+- Bug fixes
+--- Various bugs related to post editing, signatures, and site update
+
+0.7.1
+--- Compatible with GameFAQs site update
+--- Updated Ninestalgia
+
+0.7
+--- Options page completely rewritten
+--- New color picker for highlighting groups
+--- Ninestalgia stylesheet included
+--- Tracked notification dismiss link fixed
+--- Preference exporting added
+--- Support dropped for versions older than 0.6
+
+0.6.2
+--- "New post icons" option removed and made into stylesheet
+--- Updated RetroClassic
+--- Tracked topic links fixed in toolbar menu
+
+0.6.1.1
+--- Updated GFPastel
+
+0.6.1
+- Changes
+--- RetroClassic stylesheet added
+- Bug fixes
+--- XPath expressions fixed in getBoardName() and getBoardWrapHeader()
+--- Page reloading fixed after switching account
+--- Post filtering with "ad in header" setting fixed
+--- Positioning of Favorites Selector fixed in default stylesheet
+--- Preference importing fixed for new userlist system
+--- Signature selection by board id fixed for post message page
+
+0.6
+- Changes
+--- Merged with GameFOX 0.7.10
+--- Compatible with GameFAQs site update
+--- 8for11 stylesheet removed
+- Bug fixes
+--- "Message link icons" stylesheet fixed
+--- Minor context menu improvements

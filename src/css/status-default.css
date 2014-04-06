@@ -1,0 +1,57 @@
+#content .board_wrap col.status,
+#content .board_wrap table.topics tr th:first-child,
+#content .board_wrap table.topics tr:not(.gamefox-pagelist) td:first-child
+{
+  display: none;
+}
+
+.gamefox-status
+{
+  vertical-align: middle;
+  display: -webkit-inline-box;
+}
+
+.topic_closed-start
+{
+  background-image: url(http://www.gamefaqs.com/images/default/topic_closed.gif);
+  width: 18px;
+  height: 19px;
+  margin-right: 3px;
+}
+
+.topic_archived-start
+{
+  background-image: url(http://www.gamefaqs.com/images/default/topic_archived.gif);
+  width: 18px;
+  height: 19px;
+  margin-right: 3px;
+}
+
+.sticky-start
+{
+  background-image: url(http://www.gamefaqs.com/images/default/sticky.gif);
+  width: 18px;
+  height: 19px;
+  margin-right: 3px;
+}
+
+.sticky_closed-start
+{
+  background-image: url(http://www.gamefaqs.com/images/default/sticky_closed.gif);
+  width: 18px;
+  height: 19px;
+  margin-right: 3px;
+}
+
+.topic_poll-start
+{
+  background-image: url(http://img.gamefaqs.net/images/default/topic_poll.gif);
+  width: 18px;
+  height: 19px;
+  margin-right: 3px;
+}
+
+.topic_closed-end, .sticky-end, .sticky_closed-end, .topic_archived-end, .topic_poll-end
+{
+  display: none;
+}
